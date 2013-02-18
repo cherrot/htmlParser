@@ -59,4 +59,5 @@ selector.each(parse)
 dict_writer = csv.DictWriter(file('output.csv', 'wb'), fieldnames=head)
 #dict_writer.writerow(head)
 dict_writer.writeheader()
+print records
 dict_writer.writerows(records)
