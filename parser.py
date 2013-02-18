@@ -56,7 +56,7 @@ selector.each(parse)
 
 
 #export to csv file
-dict_writer = csv.DictWriter(file('output.csv', 'wb'), fieldnames=heads)
-#dict_writer.writerow(heads)
-dict_writer.writeheaderrr()
+dict_writer = csv.DictWriter(file('output.csv', 'wb'), fieldnames=head)
+#dict_writer.writerow(head)
+dict_writer.writeheader()
 dict_writer.writerows(records)
